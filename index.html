@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dyslexia Lab — Power-Up</title>
+  <script src="https://p.trellocdn.com/power-up.min.js"></script>
+</head>
+<body>
+  <script>
+    TrelloPowerUp.initialize({
+      "board-buttons": function (t) {
+        return [{
+          text: "📊 Отчёт",
+          callback: function (t) {
+            return t.modal({
+              title: "Статистика работы",
+              url: new URL("./report.html", window.location.href).href,
+              fullscreen: true
+            });
+          }
+        }];
+      }
+    });
+  </script>
+</body>
+</html>
