@@ -1,6 +1,6 @@
 (() => {
   // Получите API key в настройках Trello Power-Up и подставьте его сюда.
-  const TRELLO_API_KEY = "ВСТАВЬТЕ_TRELLO_API_KEY";
+  const API_KEY = "YOUR_API_KEY";
 
   const t = TrelloPowerUp.iframe();
   const message = document.getElementById("message");
